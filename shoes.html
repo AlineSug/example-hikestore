@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoes</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    
+    <section class="flex-layout">
+        <div class="flex-container">
+            <a class="flex-item"  href="index.html"> Home</a>
+            <a class="flex-item" href="shoes.html">Shoes</a>
+            <a class="flex-item" href="about.html"> About</a>
+            <a class="flex-item" href="contact.html"> Contact</a>
+        </div>
+<div class="container3">
+        <div class="flex-container2">
+            <div class="flex-item2"><img src="img/whiteshoes.jpg"><br>Whiteshoes<br>$250.00</div>
+            <div class="flex-item2"><img src="img/shoesred.jpg"><br>Redshoes<br>$210.00</div>
+            <div class="flex-item2"><img src="img/blackshoes.jpg"><br>Blackshoes<br>$205.00</div>
+
+        </div>
+</div>
+        <div class="gallery">
+            <img id="image" src="img/whiteshoes.jpg" alt="Imagem" onclick="changeImage()">
+        </div>
+    
+        <script>
+            const images = ["img/whiteshoes.jpg", "img/blackshoes.jpg"]; // Adicione mais imagens se quiser
+        let index = 0;
+        
+        function changeImage() {
+            index = (index + 1) % images.length; // Avança para a próxima imagem
+            document.getElementById("image").src = images[index];
+        }
+          </script>
+          <footer>&copy;Todos os direitos reservados HIKE</footer>
+          </div>
+</body>
+</html>
